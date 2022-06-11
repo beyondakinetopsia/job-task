@@ -1,0 +1,275 @@
+* {
+  font-family: jost;
+}
+.navbar {
+    position: absolute;
+    background: transparent;
+}
+.carousel {
+    background-color: #0e1215;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.collapse .navbar-nav .nav-item a {
+  color: white;
+}
+body {
+  background-image: url(images/groovepaper.png);
+}
+.card-widget {
+  border: 0px black solid;
+  width: 60%;
+  margin: 40px auto;
+  box-shadow: 1px 1px 5px;
+  display: flex;
+}
+.animation-row {
+  background-image: url(images/river.jpg), url(images/winter.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%, 100%;
+  background-position-x: left, right;
+  height: 500px;
+  object-fit: contain;
+}
+.stambul-text {
+  padding-right: 40px !important;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.info {
+  color: white;
+  background-image: url("images/beach.jpg");
+  min-height : 100%;
+  min-width : 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.form-group p{
+  margin-bottom: 2px;
+}
+.form-group input{
+  background-color: lightgrey;
+  color: grey;
+  border-radius: 0;
+}
+.form-group button{
+  background-color: rgb(245, 245, 45);
+  border: 0 transparent solid;
+  color: black;
+  font-weight: 600;
+  border-radius: 0;
+  
+}
+.btn {
+  width: 200px;
+  height: 50px;
+}
+
+.footer-menu {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links-standard {
+  flex: 1;
+  text-align: right;
+}
+.nav-links-standard ul li {
+  padding: 8px 12px;
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+.nav-links-standard ul li a {
+  color: white;
+  font-size: small;
+}
+.nav-links-standard ul li p {
+  color: white;
+  font-size: small;
+}
+.full-footer {
+  background-color: #0e1215;
+  padding-bottom: 40px;
+}
+.top-footer p {
+  color: white;
+}
+.top-footer a {
+  color: white;
+}
+.top-footer h3 {
+  color: white;
+}
+.footer-text a {
+  text-decoration: none;
+  color: white;
+}
+.footer-text h3 {
+  color: yellow;
+}
+.footer-text p {
+  color: white;
+}
+
+@keyframes wheel-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translateX(-320px);
+  }
+}
+@keyframes hp-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translate(-320px,-100px);
+  }
+}
+@keyframes balloon-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translate(-320px,100px);
+  }
+}
+@keyframes monitor-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translate(320px,-100px);
+  }
+}
+@keyframes canvas-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translateX(320px);
+  }
+}
+@keyframes notebook-animation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    
+  }
+  75% {
+    
+  }
+  100% {
+    transform: translate(320px,100px);
+  }
+}
+
+.wheel {
+  height: 96px;
+  width: 96px;
+  animation-name: wheel-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.head-phones {
+  height: 96px;
+  width: 96px;
+  margin-top: -30%;
+  animation-name: hp-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.balloon {
+  height: 96px;
+  width: 96px;
+  margin-top: 30%;
+  margin-right: -25%;
+  animation-name: balloon-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.canvas {
+  height: 96px;
+  width: 96px;
+  animation-name: canvas-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.monitor {
+  height: 96px;
+  width: 96px;
+  margin-top: -30%;
+  animation-name: monitor-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.notebook {
+  height: 96px;
+  width: 96px;
+  margin-top: 30%;
+  margin-left: -25%;
+  animation-name: notebook-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@font-face {
+  font-family: jostitalic;
+  src: url(fonts/Jost-Italic-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: jost;
+  src: url(fonts/Jost-VariableFont_wght.ttf) format("truetype");
+}
